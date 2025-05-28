@@ -1,0 +1,1211 @@
+@genus:root: 8> syn_generic
+##Generic Timing Info for library domain: _default_ typical gate delay: 25.1 ps std_slew: 9.2 ps std_load: 6.0 fF
+Starting mux data reorder optimization [v1.0] (stage: pre_to_gen_setup, startdef: fifo_async, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.002s)
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'fifo_async' contains the following combinational loop:
+          g1301/z
+          g1244/in_1
+          g1244/z
+          g1245/in_1
+          g1245/z
+          ctl_133_23/in_4
+          ctl_133_23/in_4
+          ctl_133_23/g12/in_1
+          ctl_133_23/g12/z
+          ctl_133_23/g8/in_1
+          ctl_133_23/g8/z
+          ctl_133_23/out_0[1]
+          ctl_133_23/out_0[1]
+          mux_filled_133_23/ctl[1]
+          mux_filled_133_23/ctl[1]
+          mux_filled_133_23/g1/sel3
+          mux_filled_133_23/g1/z
+          mux_filled_133_23/z[6]
+          mux_filled_133_23/z[6]
+          mux_filled_132_30/in_0[6]
+          mux_filled_132_30/in_0[6]
+          mux_filled_132_30/g1/data0
+          mux_filled_132_30/g1/z
+          mux_filled_132_30/z[6]
+          mux_filled_132_30/z[6]
+          lt_153_66/A[6]
+          lt_153_66/A[6]
+          lt_153_66/g21/in_0
+          lt_153_66/g21/z
+          lt_153_66/g42/in_0
+          lt_153_66/g42/z
+          lt_153_66/g43/in_1
+          lt_153_66/g43/z
+          lt_153_66/g49/in_0
+          lt_153_66/g49/z
+          lt_153_66/g50/in_1
+          lt_153_66/g50/z
+          lt_153_66/g51/in_1
+          lt_153_66/g51/z
+          lt_153_66/g9/in_0
+          lt_153_66/g9/z
+          lt_153_66/Z
+          lt_153_66/Z
+          g1251/in_1
+          g1251/z
+          mux_sig_high_153_55/ctl
+          mux_sig_high_153_55/ctl
+          mux_sig_high_153_55/g1/sel0
+          mux_sig_high_153_55/g1/z
+          mux_sig_high_153_55/z
+          mux_sig_high_153_55/z
+          mux_sig_high_152_35/in_0
+          mux_sig_high_152_35/in_0
+          mux_sig_high_152_35/g1/data0
+          mux_sig_high_152_35/g1/z
+          mux_sig_high_152_35/z
+          mux_sig_high_152_35/z
+          mux_sig_high_151_34/in_0
+          mux_sig_high_151_34/in_0
+          mux_sig_high_151_34/g1/data0
+          mux_sig_high_151_34/g1/z
+          mux_sig_high_151_34/z
+          mux_sig_high_151_34/z
+          ctl_168_33/in_0[6]
+          ctl_168_33/in_0[6]
+          ctl_168_33/g33/in_3
+          ctl_168_33/g33/z
+          ctl_168_33/out_0[1]
+          ctl_168_33/out_0[1]
+          mux_state_168_33/ctl[1]
+          mux_state_168_33/ctl[1]
+          mux_state_168_33/g2/sel6
+          mux_state_168_33/g2/z
+          mux_state_168_33/z[1]
+          mux_state_168_33/z[1]
+          mux_prev_state_61_11/in_0[1]
+          mux_prev_state_61_11/in_0[1]
+          mux_prev_state_61_11/g2/data0
+          mux_prev_state_61_11/g2/z
+          mux_prev_state_61_11/z[1]
+          mux_prev_state_61_11/z[1]
+          g1301/in_2
+          g1301/z
+The combinational loop has been disabled.
+        : Run 'check_timing_intent' to get the detailed information By default Genus inserts cdn_loop_breaker instances to break combinational feedback loops during timing analysis. You can use command 'report cdn_loop_breaker' to report all the loop breakers in the design. You can use command 'remove_cdn_loop_breaker' to remove the loop breakers. Once the loop breaker instances inserted by Genus are removed, the user can break the loops manually using command set_disable_timing.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'fifo_async' contains the following combinational loop:
+          g1301/z
+          g1244/in_1
+          g1244/z
+          g1245/in_1
+          g1245/z
+          ctl_133_23/in_4
+          ctl_133_23/in_4
+          ctl_133_23/g12/in_1
+          ctl_133_23/g12/z
+          ctl_133_23/g8/in_1
+          ctl_133_23/g8/z
+          ctl_133_23/out_0[1]
+          ctl_133_23/out_0[1]
+          mux_filled_133_23/ctl[1]
+          mux_filled_133_23/ctl[1]
+          mux_filled_133_23/g4/sel3
+          mux_filled_133_23/g4/z
+          mux_filled_133_23/z[3]
+          mux_filled_133_23/z[3]
+          mux_filled_132_30/in_0[3]
+          mux_filled_132_30/in_0[3]
+          mux_filled_132_30/g4/data0
+          mux_filled_132_30/g4/z
+          mux_filled_132_30/z[3]
+          mux_filled_132_30/z[3]
+          gte_153_38/A[3]
+          gte_153_38/A[3]
+          gte_153_38/g15/in_0
+          gte_153_38/g15/z
+          gte_153_38/g27/in_1
+          gte_153_38/g27/z
+          gte_153_38/g35/in_0
+          gte_153_38/g35/z
+          gte_153_38/g36/in_1
+          gte_153_38/g36/z
+          gte_153_38/g41/in_1
+          gte_153_38/g41/z
+          gte_153_38/g45/in_1
+          gte_153_38/g45/z
+          gte_153_38/Z
+          gte_153_38/Z
+          g1251/in_0
+          g1251/z
+          mux_sig_high_153_55/ctl
+          mux_sig_high_153_55/ctl
+          mux_sig_high_153_55/g1/sel0
+          mux_sig_high_153_55/g1/z
+          mux_sig_high_153_55/z
+          mux_sig_high_153_55/z
+          mux_sig_high_152_35/in_0
+          mux_sig_high_152_35/in_0
+          mux_sig_high_152_35/g1/data0
+          mux_sig_high_152_35/g1/z
+          mux_sig_high_152_35/z
+          mux_sig_high_152_35/z
+          mux_sig_high_151_34/in_0
+          mux_sig_high_151_34/in_0
+          mux_sig_high_151_34/g1/data0
+          mux_sig_high_151_34/g1/z
+          mux_sig_high_151_34/z
+          mux_sig_high_151_34/z
+          ctl_168_33/in_0[6]
+          ctl_168_33/in_0[6]
+          ctl_168_33/g33/in_3
+          ctl_168_33/g33/z
+          ctl_168_33/out_0[1]
+          ctl_168_33/out_0[1]
+          mux_state_168_33/ctl[1]
+          mux_state_168_33/ctl[1]
+          mux_state_168_33/g2/sel6
+          mux_state_168_33/g2/z
+          mux_state_168_33/z[1]
+          mux_state_168_33/z[1]
+          mux_prev_state_61_11/in_0[1]
+          mux_prev_state_61_11/in_0[1]
+          mux_prev_state_61_11/g2/data0
+          mux_prev_state_61_11/g2/z
+          mux_prev_state_61_11/z[1]
+          mux_prev_state_61_11/z[1]
+          g1301/in_2
+          g1301/z
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'fifo_async' contains the following combinational loop:
+          mux_prev_state_61_11/z[1]
+          g1265/in_2
+          g1265/z
+          g1323/in_1
+          g1323/z
+          g1325/in_3
+          g1325/z
+          mux_sig_empty_141_43/ctl
+          mux_sig_empty_141_43/ctl
+          mux_sig_empty_141_43/g1/sel0
+          mux_sig_empty_141_43/g1/z
+          mux_sig_empty_141_43/z
+          mux_sig_empty_141_43/z
+          mux_sig_empty_140_36/in_0
+          mux_sig_empty_140_36/in_0
+          mux_sig_empty_140_36/g1/data0
+          mux_sig_empty_140_36/g1/z
+          mux_sig_empty_140_36/z
+          mux_sig_empty_140_36/z
+          mux_sig_empty_139_35/in_0
+          mux_sig_empty_139_35/in_0
+          mux_sig_empty_139_35/g1/data0
+          mux_sig_empty_139_35/g1/z
+          mux_sig_empty_139_35/z
+          mux_sig_empty_139_35/z
+          ctl_168_33/in_0[3]
+          ctl_168_33/in_0[3]
+          ctl_168_33/g2/in_0
+          ctl_168_33/g2/z
+          ctl_168_33/g4/in_0
+          ctl_168_33/g4/z
+          ctl_168_33/g36/in_0
+          ctl_168_33/g36/z
+          ctl_168_33/g33/in_2
+          ctl_168_33/g33/z
+          ctl_168_33/out_0[1]
+          ctl_168_33/out_0[1]
+          mux_state_168_33/ctl[1]
+          mux_state_168_33/ctl[1]
+          mux_state_168_33/g2/sel6
+          mux_state_168_33/g2/z
+          mux_state_168_33/z[1]
+          mux_state_168_33/z[1]
+          mux_prev_state_61_11/in_0[1]
+          mux_prev_state_61_11/in_0[1]
+          mux_prev_state_61_11/g2/data0
+          mux_prev_state_61_11/g2/z
+          mux_prev_state_61_11/z[1]
+          mux_prev_state_61_11/z[1]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'fifo_async' contains the following combinational loop:
+          g1301/z
+          g1244/in_1
+          g1244/z
+          g1245/in_1
+          g1245/z
+          ctl_133_23/in_4
+          ctl_133_23/in_4
+          ctl_133_23/g12/in_1
+          ctl_133_23/g12/z
+          ctl_133_23/g8/in_1
+          ctl_133_23/g8/z
+          ctl_133_23/out_0[1]
+          ctl_133_23/out_0[1]
+          mux_filled_133_23/ctl[1]
+          mux_filled_133_23/ctl[1]
+          mux_filled_133_23/g7/sel3
+          mux_filled_133_23/g7/z
+          mux_filled_133_23/z[0]
+          mux_filled_133_23/z[0]
+          mux_filled_132_30/in_0[0]
+          mux_filled_132_30/in_0[0]
+          mux_filled_132_30/g7/data0
+          mux_filled_132_30/g7/z
+          mux_filled_132_30/z[0]
+          mux_filled_132_30/z[0]
+          gte_147_53/A[0]
+          gte_147_53/A[0]
+          gte_147_53/g61/in_0
+          gte_147_53/g61/z
+          gte_147_53/g4/in_0
+          gte_147_53/g4/z
+          gte_147_53/g70/in_0
+          gte_147_53/g70/z
+          gte_147_53/g19/in_1
+          gte_147_53/g19/z
+          gte_147_53/g72/in_0
+          gte_147_53/g72/z
+          gte_147_53/g32/in_1
+          gte_147_53/g32/z
+          gte_147_53/g73/in_0
+          gte_147_53/g73/z
+          gte_147_53/g45/in_1
+          gte_147_53/g45/z
+          gte_147_53/Z
+          gte_147_53/Z
+          g1249/in_1
+          g1249/z
+          mux_sig_low_147_42/ctl
+          mux_sig_low_147_42/ctl
+          mux_sig_low_147_42/g1/sel0
+          mux_sig_low_147_42/g1/z
+          mux_sig_low_147_42/z
+          mux_sig_low_147_42/z
+          mux_sig_low_146_35/in_0
+          mux_sig_low_146_35/in_0
+          mux_sig_low_146_35/g1/data0
+          mux_sig_low_146_35/g1/z
+          mux_sig_low_146_35/z
+          mux_sig_low_146_35/z
+          mux_sig_low_145_34/in_0
+          mux_sig_low_145_34/in_0
+          mux_sig_low_145_34/g1/data0
+          mux_sig_low_145_34/g1/z
+          mux_sig_low_145_34/z
+          mux_sig_low_145_34/z
+          ctl_168_33/in_0[4]
+          ctl_168_33/in_0[4]
+          ctl_168_33/g15/in_1
+          ctl_168_33/g15/z
+          ctl_168_33/out_0[3]
+          ctl_168_33/out_0[3]
+          mux_state_168_33/ctl[3]
+          mux_state_168_33/ctl[3]
+          mux_state_168_33/g2/sel4
+          mux_state_168_33/g2/z
+          mux_state_168_33/z[1]
+          mux_state_168_33/z[1]
+          mux_prev_state_61_11/in_0[1]
+          mux_prev_state_61_11/in_0[1]
+          mux_prev_state_61_11/g2/data0
+          mux_prev_state_61_11/g2/z
+          mux_prev_state_61_11/z[1]
+          mux_prev_state_61_11/z[1]
+          g1301/in_2
+          g1301/z
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'fifo_async' contains the following combinational loop:
+          ctl_133_23/g9/z
+          ctl_133_23/g1/in_1
+          ctl_133_23/g1/z
+          ctl_133_23/g5/in_0
+          ctl_133_23/g5/z
+          ctl_133_23/g6/in_0
+          ctl_133_23/g6/z
+          ctl_133_23/out_0[2]
+          ctl_133_23/out_0[2]
+          mux_filled_133_23/ctl[2]
+          mux_filled_133_23/ctl[2]
+          mux_filled_133_23/g7/sel2
+          mux_filled_133_23/g7/z
+          mux_filled_133_23/z[0]
+          mux_filled_133_23/z[0]
+          mux_filled_132_30/in_0[0]
+          mux_filled_132_30/in_0[0]
+          mux_filled_132_30/g7/data0
+          mux_filled_132_30/g7/z
+          mux_filled_132_30/z[0]
+          mux_filled_132_30/z[0]
+          gte_147_53/A[0]
+          gte_147_53/A[0]
+          gte_147_53/g61/in_0
+          gte_147_53/g61/z
+          gte_147_53/g4/in_0
+          gte_147_53/g4/z
+          gte_147_53/g70/in_0
+          gte_147_53/g70/z
+          gte_147_53/g19/in_1
+          gte_147_53/g19/z
+          gte_147_53/g72/in_0
+          gte_147_53/g72/z
+          gte_147_53/g32/in_1
+          gte_147_53/g32/z
+          gte_147_53/g73/in_0
+          gte_147_53/g73/z
+          gte_147_53/g45/in_1
+          gte_147_53/g45/z
+          gte_147_53/Z
+          gte_147_53/Z
+          g1249/in_1
+          g1249/z
+          mux_sig_low_147_42/ctl
+          mux_sig_low_147_42/ctl
+          mux_sig_low_147_42/g1/sel0
+          mux_sig_low_147_42/g1/z
+          mux_sig_low_147_42/z
+          mux_sig_low_147_42/z
+          mux_sig_low_146_35/in_0
+          mux_sig_low_146_35/in_0
+          mux_sig_low_146_35/g1/data0
+          mux_sig_low_146_35/g1/z
+          mux_sig_low_146_35/z
+          mux_sig_low_146_35/z
+          mux_sig_low_145_34/in_0
+          mux_sig_low_145_34/in_0
+          mux_sig_low_145_34/g1/data0
+          mux_sig_low_145_34/g1/z
+          mux_sig_low_145_34/z
+          mux_sig_low_145_34/z
+          ctl_168_33/in_0[4]
+          ctl_168_33/in_0[4]
+          ctl_168_33/g15/in_1
+          ctl_168_33/g15/z
+          ctl_168_33/out_0[3]
+          ctl_168_33/out_0[3]
+          mux_state_168_33/ctl[3]
+          mux_state_168_33/ctl[3]
+          mux_state_168_33/g2/sel4
+          mux_state_168_33/g2/z
+          mux_state_168_33/z[1]
+          mux_state_168_33/z[1]
+          mux_prev_state_61_11/in_0[1]
+          mux_prev_state_61_11/in_0[1]
+          mux_prev_state_61_11/g2/data0
+          mux_prev_state_61_11/g2/z
+          mux_prev_state_61_11/z[1]
+          mux_prev_state_61_11/z[1]
+          g1301/in_2
+          g1301/z
+          g1302/in_0
+          g1302/z
+          g1240/in_1
+          g1240/z
+          g1241/in_1
+          g1241/z
+          ctl_133_23/in_1
+          ctl_133_23/in_1
+          ctl_133_23/g9/in_1
+          ctl_133_23/g9/z
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'fifo_async' contains the following combinational loop:
+          mux_filled_132_30/z[6]
+          g1272/in_0
+          g1272/z
+          g1273/in_0
+          g1273/z
+          g10/in_1
+          g10/z
+          mux_sig_full_159_38/ctl
+          mux_sig_full_159_38/ctl
+          mux_sig_full_159_38/g1/sel0
+          mux_sig_full_159_38/g1/z
+          mux_sig_full_159_38/z
+          mux_sig_full_159_38/z
+          mux_sig_full_158_35/in_0
+          mux_sig_full_158_35/in_0
+          mux_sig_full_158_35/g1/data0
+          mux_sig_full_158_35/g1/z
+          mux_sig_full_158_35/z
+          mux_sig_full_158_35/z
+          mux_sig_full_157_34/in_0
+          mux_sig_full_157_34/in_0
+          mux_sig_full_157_34/g1/data0
+          mux_sig_full_157_34/g1/z
+          mux_sig_full_157_34/z
+          mux_sig_full_157_34/z
+          ctl_168_33/in_0[5]
+          ctl_168_33/in_0[5]
+          ctl_168_33/g17/in_1
+          ctl_168_33/g17/z
+          ctl_168_33/out_0[2]
+          ctl_168_33/out_0[2]
+          mux_state_168_33/ctl[2]
+          mux_state_168_33/ctl[2]
+          mux_state_168_33/g1/sel5
+          mux_state_168_33/g1/z
+          mux_state_168_33/z[2]
+          mux_state_168_33/z[2]
+          mux_prev_state_61_11/in_0[2]
+          mux_prev_state_61_11/in_0[2]
+          mux_prev_state_61_11/g1/data0
+          mux_prev_state_61_11/g1/z
+          mux_prev_state_61_11/z[2]
+          mux_prev_state_61_11/z[2]
+          g1293/in_2
+          g1293/z
+          g1307/in_0
+          g1307/z
+          g1242/in_1
+          g1242/z
+          ctl_133_23/in_2
+          ctl_133_23/in_2
+          ctl_133_23/g10/in_1
+          ctl_133_23/g10/z
+          ctl_133_23/g4/in_1
+          ctl_133_23/g4/z
+          ctl_133_23/out_0[3]
+          ctl_133_23/out_0[3]
+          mux_filled_133_23/ctl[3]
+          mux_filled_133_23/ctl[3]
+          mux_filled_133_23/g1/sel1
+          mux_filled_133_23/g1/z
+          mux_filled_133_23/z[6]
+          mux_filled_133_23/z[6]
+          mux_filled_132_30/in_0[6]
+          mux_filled_132_30/in_0[6]
+          mux_filled_132_30/g1/data0
+          mux_filled_132_30/g1/z
+          mux_filled_132_30/z[6]
+          mux_filled_132_30/z[6]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'fifo_async' contains the following combinational loop:
+          mux_prev_state_61_11/z[1]
+          g1265/in_2
+          g1265/z
+          g1323/in_1
+          g1323/z
+          g1325/in_3
+          g1325/z
+          mux_sig_empty_141_43/ctl
+          mux_sig_empty_141_43/ctl
+          mux_sig_empty_141_43/g1/sel0
+          mux_sig_empty_141_43/g1/z
+          mux_sig_empty_141_43/z
+          mux_sig_empty_141_43/z
+          mux_sig_empty_140_36/in_0
+          mux_sig_empty_140_36/in_0
+          mux_sig_empty_140_36/g1/data0
+          mux_sig_empty_140_36/g1/z
+          mux_sig_empty_140_36/z
+          mux_sig_empty_140_36/z
+          mux_sig_empty_139_35/in_0
+          mux_sig_empty_139_35/in_0
+          mux_sig_empty_139_35/g1/data0
+          mux_sig_empty_139_35/g1/z
+          mux_sig_empty_139_35/z
+          mux_sig_empty_139_35/z
+          ctl_168_33/in_0[3]
+          ctl_168_33/in_0[3]
+          ctl_168_33/g2/in_0
+          ctl_168_33/g2/z
+          ctl_168_33/g4/in_0
+          ctl_168_33/g4/z
+          ctl_168_33/g14/in_0
+          ctl_168_33/g14/z
+          ctl_168_33/g15/in_0
+          ctl_168_33/g15/z
+          ctl_168_33/out_0[3]
+          ctl_168_33/out_0[3]
+          mux_state_168_33/ctl[3]
+          mux_state_168_33/ctl[3]
+          mux_state_168_33/g2/sel4
+          mux_state_168_33/g2/z
+          mux_state_168_33/z[1]
+          mux_state_168_33/z[1]
+          mux_prev_state_61_11/in_0[1]
+          mux_prev_state_61_11/in_0[1]
+          mux_prev_state_61_11/g2/data0
+          mux_prev_state_61_11/g2/z
+          mux_prev_state_61_11/z[1]
+          mux_prev_state_61_11/z[1]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'fifo_async' contains the following combinational loop:
+          mux_prev_state_61_11/z[0]
+          g1265/in_1
+          g1265/z
+          g1323/in_1
+          g1323/z
+          g1325/in_3
+          g1325/z
+          mux_sig_empty_141_43/ctl
+          mux_sig_empty_141_43/ctl
+          mux_sig_empty_141_43/g1/sel0
+          mux_sig_empty_141_43/g1/z
+          mux_sig_empty_141_43/z
+          mux_sig_empty_141_43/z
+          mux_sig_empty_140_36/in_0
+          mux_sig_empty_140_36/in_0
+          mux_sig_empty_140_36/g1/data0
+          mux_sig_empty_140_36/g1/z
+          mux_sig_empty_140_36/z
+          mux_sig_empty_140_36/z
+          mux_sig_empty_139_35/in_0
+          mux_sig_empty_139_35/in_0
+          mux_sig_empty_139_35/g1/data0
+          mux_sig_empty_139_35/g1/z
+          mux_sig_empty_139_35/z
+          mux_sig_empty_139_35/z
+          ctl_168_33/in_0[3]
+          ctl_168_33/in_0[3]
+          ctl_168_33/g13/in_1
+          ctl_168_33/g13/z
+          ctl_168_33/out_0[4]
+          ctl_168_33/out_0[4]
+          mux_state_168_33/ctl[4]
+          mux_state_168_33/ctl[4]
+          mux_state_168_33/g3/sel3
+          mux_state_168_33/g3/z
+          mux_state_168_33/z[0]
+          mux_state_168_33/z[0]
+          mux_prev_state_61_11/in_0[0]
+          mux_prev_state_61_11/in_0[0]
+          mux_prev_state_61_11/g3/data0
+          mux_prev_state_61_11/g3/z
+          mux_prev_state_61_11/z[0]
+          mux_prev_state_61_11/z[0]
+The combinational loop has been disabled.
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'fifo_async' contains the following combinational loop:
+          g1264/z
+          g1265/in_0
+          g1265/z
+          g1323/in_1
+          g1323/z
+          g1325/in_3
+          g1325/z
+          mux_sig_empty_141_43/ctl
+          mux_sig_empty_141_43/ctl
+          mux_sig_empty_141_43/g1/sel0
+          mux_sig_empty_141_43/g1/z
+          mux_sig_empty_141_43/z
+          mux_sig_empty_141_43/z
+          mux_sig_empty_140_36/in_0
+          mux_sig_empty_140_36/in_0
+          mux_sig_empty_140_36/g1/data0
+          mux_sig_empty_140_36/g1/z
+          mux_sig_empty_140_36/z
+          mux_sig_empty_140_36/z
+          mux_sig_empty_139_35/in_0
+          mux_sig_empty_139_35/in_0
+          mux_sig_empty_139_35/g1/data0
+          mux_sig_empty_139_35/g1/z
+          mux_sig_empty_139_35/z
+          mux_sig_empty_139_35/z
+          ctl_168_33/in_0[3]
+          ctl_168_33/in_0[3]
+          ctl_168_33/g2/in_0
+          ctl_168_33/g2/z
+          ctl_168_33/g4/in_0
+          ctl_168_33/g4/z
+          ctl_168_33/g7/in_1
+          ctl_168_33/g7/z
+          ctl_168_33/g16/in_0
+          ctl_168_33/g16/z
+          ctl_168_33/g17/in_0
+          ctl_168_33/g17/z
+          ctl_168_33/out_0[2]
+          ctl_168_33/out_0[2]
+          mux_state_168_33/ctl[2]
+          mux_state_168_33/ctl[2]
+          mux_state_168_33/g1/sel5
+          mux_state_168_33/g1/z
+          mux_state_168_33/z[2]
+          mux_state_168_33/z[2]
+          mux_prev_state_61_11/in_0[2]
+          mux_prev_state_61_11/in_0[2]
+          mux_prev_state_61_11/g1/data0
+          mux_prev_state_61_11/g1/z
+          mux_prev_state_61_11/z[2]
+          mux_prev_state_61_11/z[2]
+          g1264/in_0
+          g1264/z
+The combinational loop has been disabled.
+Info    : Synthesizing. [SYNTH-1]
+        : Synthesizing 'fifo_async' to generic gates using 'medium' effort.
+PBS_Generic-Start - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_Generic-Start' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:36(00:06:36) |  00:00:00(00:00:00) |   0.0(  0.0) |   22:51:38 (May27) |  467.9 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+TNS Restructuring config: no_value at stage: generic applied.
+Info    : Partition Based Synthesis execution skipped. [PHYS-752]
+        : Design size is less than the partition size '100000' for distributed generic optimization to kick in.
+Starting mux data reorder optimization [v1.0] (stage: pre_to_gen_setup, startdef: fifo_async, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.003s)
+Starting mux data reorder optimization [v1.0] (stage: post_to_gen_setup, startdef: fifo_async, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.002s)
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+--------------------------------------------
+| Trick | Accepts | Rejects | Runtime (ms) |
+--------------------------------------------
+--------------------------------------------
+Starting infer macro optimization [v1.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed infer macro optimization (accepts: 0, rejects: 12, runtime: 0.006s)
+Starting decode mux sandwich optimization [v2.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed decode mux sandwich optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting decode mux optimization [v1.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed decode mux optimization (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting chop wide muxes [v1.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed chop wide muxes (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting common data mux cascade opt [v1.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed common data mux cascade opt (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting mux input consolidation [v1.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed mux input consolidation (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting priority mux optimization [v1.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed priority mux optimization (accepts: 0, rejects: 0, runtime: 0.493s)
+Starting constant-data mux optimization [v1.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed constant-data mux optimization (accepts: 0, rejects: 0, runtime: 0.003s)
+Starting chain-to-tree inequality transform [v2.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed chain-to-tree inequality transform (accepts: 0, rejects: 0, runtime: 0.014s)
+Starting reconvergence optimization [v1.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed reconvergence optimization (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting logic restructure optimization [v1.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed logic restructure optimization (accepts: 0, rejects: 0, runtime: 0.002s)
+Starting common select mux optimization [v1.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed common select mux optimization (accepts: 0, rejects: 1, runtime: 0.002s)
+Starting identity transform [v3.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed identity transform (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting reduce operator chain [v1.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed reduce operator chain (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting common data mux cascade opt [v1.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed common data mux cascade opt (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting mux input consolidation [v1.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed mux input consolidation (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting optimize datapath elements [v1.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed optimize datapath elements (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting datapath recasting [v1.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed datapath recasting (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip mux common data inputs [v1.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting clip the non-user hierarchies [v2.0] (stage: pre_rtlopt, startdef: fifo_async, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+--------------------------------------------------
+| Trick       | Accepts | Rejects | Runtime (ms) |
+--------------------------------------------------
+| ume_runtime |       0 |       0 |         0.00 |
+--------------------------------------------------
+Number of big hc bmuxes before = 1
+Number of non-ctl's : 4
+mux_prev_state_61_5082 mux_sts_error_163_5084 mux_sts_error_164_5086 mux_sts_error_165_5088
+SOP DEBUG : Module= fifo_async, Cluster= g5081, ctl= 4, Non-ctl= 4
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster g5081.
+Info    : Pre-processed datapath logic. [DPOPT-6]
+        : Pre-processing optimizations applied to datapath logic in 'fifo_async':
+          live_trim(3) sop(1)
+Info    : Optimizing datapath logic. [DPOPT-1]
+        : Optimizing datapath logic in 'fifo_async'.
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region_0_0'
+CSAGen Prep Share:0 Re-Write:4 Speculation: 0
+MaxCSA: Successfully built Maximal CSA Expression Expr0
+MaxCSA: Successfully built Maximal CSA Expression Expr1
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_0_0_c7 in fif                                                                          o_async':
+          (SUB_TC_OP_1, SUB_TC_OP)
+
+Number of non-ctl's : 3
+g5400 g5401 mux_state_168_33
+SOP DEBUG : Module= CDN_DP_region_0_0_c7, Cluster= ctl_168_33, ctl= 1, Non-ctl=                                                                               3
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_168_33.
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_0_0_c1 in fif                                                                              o_async':
+          (lt_136_44, gt_135_26)
+          (ADD_UNS_OP, sub_135_11)
+
+Number of non-ctl's : 3
+g5400 g5401 mux_state_168_33
+SOP DEBUG : Module= CDN_DP_region_0_0_c1, Cluster= ctl_168_33, ctl= 1, Non-ctl=                                                                               3
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_168_33.
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_0_0_c2 in fif                                                                              o_async':
+          (lt_136_44, gt_135_26)
+          (ADD_UNS_OP, sub_135_11)
+
+Number of non-ctl's : 3
+g5400 g5401 mux_state_168_33
+SOP DEBUG : Module= CDN_DP_region_0_0_c2, Cluster= ctl_168_33, ctl= 1, Non-ctl=                                                                               3
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_168_33.
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_0_0_c3 in fif                                                                              o_async':
+          (lt_136_44, gt_135_26)
+          (ADD_UNS_OP, sub_135_11)
+
+Number of non-ctl's : 3
+g5400 g5401 mux_state_168_33
+SOP DEBUG : Module= CDN_DP_region_0_0_c3, Cluster= ctl_168_33, ctl= 1, Non-ctl=                                                                               3
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_168_33.
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_0_0_c4 in fif                                                                              o_async':
+          (lt_136_44, gt_135_26)
+          (ADD_UNS_OP, sub_135_11)
+
+Number of non-ctl's : 3
+g5400 g5401 mux_state_168_33
+SOP DEBUG : Module= CDN_DP_region_0_0_c4, Cluster= ctl_168_33, ctl= 1, Non-ctl=                                                                               3
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_168_33.
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_0_0_c5 in fif                                                                              o_async':
+          (lt_136_44, gt_135_26)
+          (ADD_UNS_OP, sub_135_11)
+
+Number of non-ctl's : 3
+g5400 g5401 mux_state_168_33
+SOP DEBUG : Module= CDN_DP_region_0_0_c5, Cluster= ctl_168_33, ctl= 1, Non-ctl=                                                                               3
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_168_33.
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_0_0_c6 in fif                                                                              o_async':
+          (lt_136_44, gt_135_26)
+          (sub_135_11, sub0011635)
+
+Number of non-ctl's : 3
+g5400 g5401 mux_state_168_33
+SOP DEBUG : Module= CDN_DP_region_0_0_c6, Cluster= ctl_168_33, ctl= 1, Non-ctl=                                                                               3
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_168_33.
+CDN_DP_region_0_0 level = 0 loads = 0 drivers = 0
+CDN_DP_region_0_0_c0 in fifo_async: area: 4805056323 ,dp = 13 mux = 18 sg = slow                                                                                       worst_clk_period: -1.0000
+    wns: 0  norm_wns:  -1.0000
+    fail_endp: -1
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+ skipped
+CDN_DP_region_0_0_c1 in fifo_async: area: 4489893549 ,dp = 10 mux = 20 sg = fast                                                                                       worst_clk_period: -1.0000
+    wns: 0  norm_wns:  -1.0000
+    fail_endp: -1
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+ is current best
+CDN_DP_region_0_0_c2 in fifo_async: area: 4489893549 ,dp = 10 mux = 20 sg = very                                                                              _slow    worst_clk_period: -1.0000
+    wns: 0  norm_wns:  -1.0000
+    fail_endp: -1
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+ is current best
+CDN_DP_region_0_0_c3 in fifo_async: area: 4489893549 ,dp = 10 mux = 20 sg = very                                                                              _fast    worst_clk_period: -1.0000
+    wns: 0  norm_wns:  -1.0000
+    fail_endp: -1
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+ is current best
+CDN_DP_region_0_0_c4 in fifo_async: area: 4489893549 ,dp = 10 mux = 20 sg = very                                                                              _fast    worst_clk_period: -1.0000
+    wns: 0  norm_wns:  -1.0000
+    fail_endp: -1
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+ is current best
+CDN_DP_region_0_0_c5 in fifo_async: area: 4489893549 ,dp = 10 mux = 20 sg = very                                                                              _fast    worst_clk_period: -1.0000
+    wns: 0  norm_wns:  -1.0000
+    fail_endp: -1
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+ is current best
+CDN_DP_region_0_0_c6 in fifo_async: area: 4518117081 ,dp = 9 mux = 19 sg = very_                                                                              fast    worst_clk_period: -1.0000
+    wns: 0  norm_wns:  -1.0000
+    fail_endp: -1
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+
+CDN_DP_region_0_0_c7 in fifo_async: area: 4725089649 ,dp = 10 mux = 17 sg = very                                                                              _fast    worst_clk_period: -1.0000
+    wns: 0  norm_wns:  -1.0000
+    fail_endp: -1
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+
+Best config: CDN_DP_region_0_0_c5 in fifo_async: area: 4489893549 ,dp = 10 mux =                                                                               20 sg = very_fast    worst_clk_period: -1.0000
+    wns: 0  norm_wns:  -1.0000
+    fail_endp: -1
+    tns:  0  tns_per_endp:  -1.0000   norm_tns_per_endp:  -1.0000
+    tns_sense_max:  -1.0000  tns_sense_avg:  -1.0000   tns_sense_num: -1
+  Smallest config area : 4489893549.  Fastest config wns;  0
+##>+----------------------------------------------------------------------------                                                                              --------------------------------------------------------------------------------                                                                              ----+
+##>Summary table of configs (Best config is CDN_DP_region_0_0_c5)
+##>+----------------------------------------------------------------------------                                                                              --------------------------------------------------------------------------------                                                                              ----+
+##>                     0                  1                  2                                                                                                3                  4                  5                  6                  7                                                                                
+##>+----------------------------------------------------------------------------                                                                              --------------------------------------------------------------------------------                                                                              ----+
+##>           Area       4805056323         4489893549         4489893549                                                                                       4489893549         4489893549         4489893549         4518117081         47                                                                              25089649
+##>            WNS    +214748364.70      +214748364.70      +214748364.70      +                                                                              214748364.70      +214748364.70      +214748364.70      +214748364.70      +2147                                                                              48364.70
+##>            TNS                0                  0                  0                                                                                                0                  0                  0                  0                                                                                                0
+##>    Num Rewrite                0                  1                  1                                                                                                1                  1                  1                  1                                                                                                4
+##>     Num Factor                0                  0                  0                                                                                                0                  0                  0                  0                                                                                                0
+##>      Num Share                0                  2                  2                                                                                                2                  2                  2                  2                                                                                                1
+##>   Num CmultCse                0                  0                  0                                                                                                0                  0                  0                  0                                                                                                0
+##>   Num Downsize                0                  0                  0                                                                                                0                  0                  0                  0                                                                                                0
+##>  Num Speculate                0                  0                  0                                                                                                0                  0                  0                  0                                                                                                0
+##>     Runtime(s)                0                  0                  0                                                                                                0                  0                  0                  1                                                                                                2
++-------------------------------------------------------------------------------                                                                              --------------------------------------------------------------------------------                                                                              -+
+##>
+##>
+##>+----------------------------------------------------------------------------                                                                              --------------------------------------------------------------------------------                                                                              +
+##>Optimization Step DEBUG Table for config CDN_DP_region_0_0_c5
+##>
+##>                          Step                        Area   ( % Chg)                                                                                      WNS (Change)        TNS (Change)          Runtime (s)        Comment                                                                                          
+##>+----------------------------------------------------------------------------                                                                              --------------------------------------------------------------------------------                                                                              +
+##>createMaxCarrySave              START             4805056323 (      )    2147                                                                              48364.70 (        )             0 (        )
+##> datapath_rewrite_one_def       START             4805056323 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>  rewrite                       START             4805056323 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)              (na,csaa) leq_mx_dp_fr                                                                              om --> sub_mx_dp_to
+##>                                  END             4934414178 ( +2.69)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>  fast_cse_elim                 START             4805056323 ( -2.62)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4805056323 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>  fast_cse_elim                 START             4805056323 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4805056323 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>                                  END             4805056323 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##> speculate_in_gdef              START             4805056323 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>  pre_speculate_mux_merge       START             4805056323 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4805056323 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>                                  END             4805056323 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##> csa_opto                       START             4805056323 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4795648479 ( -0.20)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>                                  END             4795648479 ( -0.20)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>canonicalize_by_names           START             4795648479 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4795648479 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>datapath_rewrite_post_csa_one_  START             4795648479 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##> rewrite                        START             4795648479 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)              (a,ar) csa_add_and_inc                                                                              _v2 --> csa_add_ci
+##>                                  END             4762721025 ( -0.69)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>                                  END             4762721025 ( -0.69)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>datapath_csa_factoring_one_gde  START             4762721025 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4762721025 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>dpopt_share_one_def             START             4762721025 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( -1.88)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>datapath_rewrite_post_share     START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>dp_combine_const_mult_with_com  START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>speculate_in_gdef               START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##> pre_speculate_mux_merge        START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>dp_operator_level_decompositio  START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>selective_flatten_dp_config     START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>createMaxCarrySave              START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##> datapath_rewrite_one_def       START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>  fast_cse_elim                 START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>  fast_cse_elim                 START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##> speculate_in_gdef              START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>  pre_speculate_mux_merge       START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##> csa_opto                       START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>datapath_rewrite_post_csa_one_  START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>datapath_csa_factoring_one_gde  START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>dpopt_share_one_def             START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>datapath_rewrite_post_share     START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>dp_combine_const_mult_with_com  START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>speculate_in_gdef               START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##> pre_speculate_mux_merge        START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>dp_operator_level_decompositio  START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>selective_flatten_dp_config     START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>createMaxCarrySave              START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##> datapath_rewrite_one_def       START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>  fast_cse_elim                 START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>  fast_cse_elim                 START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##> speculate_in_gdef              START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>  pre_speculate_mux_merge       START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##> csa_opto                       START             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>                                  END             4673346507 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>context_based_simplify          START             4553396496 ( -2.57)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4489893549 ( -1.39)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>group_csa_final_adder_dp        START             4489893549 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4489893549 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>dpopt_flatten_critical_muxes_i  START             4489893549 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4489893549 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>speculate_in_gdef               START             4489893549 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##> pre_speculate_mux_merge        START             4489893549 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4489893549 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>                                  END             4489893549 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>create_score                    START             4489893549 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)
+##>                                  END             4489893549 ( +0.00)    2147                                                                              48364.70 (   +0.00)             0 (       0)           0
+##>+----------------------------------------------------------------------------                                                                              --------------------------------------------------------------------------------                                                                              +
+Committed config: CDN_DP_region_0_0_c5
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 5 for module 'CDN_DP_region_0_0'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(1), factoring(0), sharing(2), cmultcse(0), downsizing(0),                                                                               speculation(0)
+Info    : Done optimizing datapath logic. [DPOPT-2]
+        : Done optimizing datapath logic in 'fifo_async'.
+Number of big hc bmuxes after = 1
+Starting logic reduction [v1.0] (stage: post_rtlopt, startdef: fifo_async, recur                                                                              : true)
+Completed logic reduction (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting mux data reorder optimization [v1.0] (stage: post_rtlopt, startdef: fif                                                                              o_async, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.002s                                                                              )
+Warning : A combinational loop has been found. [TIM-20]
+        : The design 'fifo_async' contains the following combinational loop:
+          g5328/z
+          g1265/in_1
+          g1265/z
+          g1323/in_1
+          g1323/z
+          g1325/in_3
+          g1325/z
+          mux_sig_empty_141_43/ctl
+          mux_sig_empty_141_43/ctl
+          mux_sig_empty_141_43/g1/sel0
+          mux_sig_empty_141_43/g1/z
+          mux_sig_empty_141_43/z
+          mux_sig_empty_141_43/z
+          mux_sig_empty_140_36/in_0
+          mux_sig_empty_140_36/in_0
+          mux_sig_empty_140_36/g1/data0
+          mux_sig_empty_140_36/g1/z
+          mux_sig_empty_140_36/z
+          mux_sig_empty_140_36/z
+          mux_sig_empty_139_35/in_0
+          mux_sig_empty_139_35/in_0
+          mux_sig_empty_139_35/g1/data0
+          mux_sig_empty_139_35/g1/z
+          mux_sig_empty_139_35/z
+          mux_sig_empty_139_35/z
+          g5989/in_0
+          g5989/z
+          g6125/in_0
+          g6125/z
+          g6417/in_0
+          g6417/z
+          g6420/in_0
+          g6420/z
+          g5328/in_1
+          g5328/z
+The combinational loop has been disabled.
+Starting mux speculation [v1.0] (stage: post_muxopt, startdef: fifo_async, recur                                                                              : true)
+Starting speculation optimization
+Completed speculation optimization (accepts:0)
+Completed mux speculation (accepts: 0, rejects: 0, runtime: 0.127s)
+==================================
+Stage : to_generic
+==================================
+  =================
+   Message Summary
+  =================
+--------------------------------------------------------------------------------
+|     Id      |  Sev   |Count |                 Message Text                   |
+--------------------------------------------------------------------------------
+| CDFG-250    |Info    |    1 |Processing multi-dimensional arrays.            |
+| CDFG-738    |Info    |   27 |Common subexpression eliminated.                |
+| CDFG-739    |Info    |   27 |Common subexpression kept.                      |
+| CDFG-769    |Info    |    1 |Identified sum-of-products logic to be          |
+|             |        |      | optimized during syn_generic.                  |
+| CDFG-818    |Warning |    1 |Using default parameter value for module        |
+|             |        |      | elaboration.                                   |
+| CWD-19      |Info    |  137 |An implementation was inferred.                 |
+| DPOPT-1     |Info    |    1 |Optimizing datapath logic.                      |
+| DPOPT-2     |Info    |    1 |Done optimizing datapath logic.                 |
+| DPOPT-3     |Info    |    1 |Implementing datapath configurations.           |
+| DPOPT-4     |Info    |    1 |Done implementing datapath configurations.      |
+| DPOPT-6     |Info    |    1 |Pre-processed datapath logic.                   |
+| ELAB-1      |Info    |    1 |Elaborating Design.                             |
+| ELAB-3      |Info    |    1 |Done Elaborating Design.                        |
+| ELAB-5      |Info    |    1 |Binding to architecture.                        |
+| ELABUTL-133 |Info    |    1 |To insure proper verification, preserved        |
+|             |        |      | netlist point(s)                               |
+|             |        |      | because they are involved in combinational     |
+|             |        |      | loop(s)                                        |
+|             |        |      | . To disable this, set the                     |
+|             |        |      | 'cb_preserve_ports_nets' root attribute to     |
+|             |        |      | 'false'.                                       |
+| GB-6        |Info    |   67 |A datapath component has been ungrouped.        |
+| LBR-40      |Info    | 4369 |An unsupported construct was detected in this   |
+|             |        |      | library.                                       |
+|             |        |      |Check to see if this construct is really needed |
+|             |        |      | for synthesis. Many liberty constructs are not |
+|             |        |      | actually required.                             |
+| LBR-41      |Info    |    4 |An output library pin lacks a function          |
+|             |        |      | attribute.                                     |
+|             |        |      |If the remainder of this library cell's         |
+|             |        |      | semantic checks are successful, it will be     |
+|             |        |      | considered as a timing-model                   |
+|             |        |      | (because one of its outputs does not have a va |
+|             |        |      | lid function.                                  |
+| LBR-162     |Info    |  217 |Both 'pos_unate' and 'neg_unate' timing_sense   |
+|             |        |      | arcs have been processed.                      |
+|             |        |      |Setting the 'timing_sense' to non_unate.        |
+| LBR-412     |Info    |    2 |Created nominal operating condition.            |
+|             |        |      |The nominal operating condition is represented, |
+|             |        |      | either by the nominal PVT values specified in  |
+|             |        |      | the library source                             |
+|             |        |      | (via nom_process,nom_voltage and nom_temperatu |
+|             |        |      | re respectively)                               |
+|             |        |      | , or by the default PVT values (1.0,1.0,1.0).  |
+| LBR-518     |Info    |    2 |Missing a function attribute in the output pin  |
+|             |        |      | definition.                                    |
+| LBR-525     |Warning |    1 |Missing clock pin in the sequential cell.       |
+|             |        |      |Sequential timing checks, such as               |
+|             |        |      | 'setup_rising' or 'hold_rising', on flop and   |
+|             |        |      | latch cells require a clock pin. Verify that   |
+|             |        |      | the 'clock' attribute of the clock pin is set  |
+|             |        |      | to 'true' or that the clock pin has a          |
+|             |        |      | 'clocked_on' attribute.                        |
+| LBR-526     |Warning |    1 |Missing sequential block in the sequential      |
+|             |        |      | cell.                                          |
+| LBR-531     |Warning | 3464 |Invalid value specified.                        |
+|             |        |      |Invalid value found for the attribute. Correct  |
+|             |        |      | as per Liberty syntax.                         |
+| PHYS-752    |Info    |    1 |Partition Based Synthesis execution skipped.    |
+| RTLOPT-30   |Info    |    7 |Accepted resource sharing opportunity.          |
+| RTLOPT-40   |Info    |    6 |Transformed datapath macro.                     |
+| SYNTH-1     |Info    |    1 |Synthesizing.                                   |
+| TIM-20      |Warning |   10 |A combinational loop has been found.            |
+|             |        |      |Run 'check_timing_intent' to get the detailed   |
+|             |        |      | information By default Genus inserts           |
+|             |        |      | cdn_loop_breaker instances to break            |
+|             |        |      | combinational feedback loops during timing     |
+|             |        |      | analysis. You can use command 'report          |
+|             |        |      | cdn_loop_breaker' to report all the loop       |
+|             |        |      | breakers in the design. You can use command    |
+|             |        |      | 'remove_cdn_loop_breaker' to remove the loop   |
+|             |        |      | breakers. Once the loop breaker instances      |
+|             |        |      | inserted by Genus are removed, the user can    |
+|             |        |      | break the loops manually using command         |
+|             |        |      | set_disable_timing.                            |
+| VHDL-639    |Warning |    7 |Initial values are ignored for synthesis.       |
+|             |        |      |The specified construct has no effect on        |
+|             |        |      | synthesis. In some cases                       |
+|             |        |      | (such as 'after' clauses in signal assignments |
+|             |        |      | ) may cause a mismatch between and simulation. |
+| VHDL-643    |Warning |    2 |Report statements are ignored for synthesis.    |
+|             |        |      |The specified construct has no effect on        |
+|             |        |      | synthesis. Some constructs                     |
+|             |        |      | (such as 'after' clauses in signal assignments |
+|             |        |      | )                                              |
+|             |        |      | may cause a mismatch between simulation and    |
+|             |        |      | synthesis.                                     |
+| VHDL-645    |Warning |    1 |Concurrent assertion statements are ignored for |
+|             |        |      | synthesis.                                     |
+|             |        |      |The specified construct has no effect on        |
+|             |        |      | synthesis. In some cases                       |
+|             |        |      | (such as 'after' clauses in signal assignments |
+|             |        |      | ) may cause a mismatch between and simulation. |
+--------------------------------------------------------------------------------
+Mapper: Libraries have:
+        domain _default_: 625 combo usable cells and 160 sequential usable cells
+Multi-threaded constant propagation [1|0] ...
+Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 28 CPUs usable                                                                              )
+==================================
+Stage : first_condense
+==================================
+  =================
+   Message Summary
+  =================
+---------------------------------------------------------------
+|  Id  |Sev  |Count |              Message Text               |
+---------------------------------------------------------------
+| GB-6 |Info |   11 |A datapath component has been ungrouped. |
+---------------------------------------------------------------
+
+Global mapping target info
+==========================
+Cost Group 'default' target slack: Unconstrained
+
+
+State Retention Synthesis Status
+================================
+
+Category                        Flops   Percentage
+--------------------------------------------------
+Total instances                   534        100.0
+Excluded from State Retention     534        100.0
+    - Will not convert            534        100.0
+      - Preserved                   0          0.0
+      - Power intent excluded     534        100.0
+    - Could not convert             0          0.0
+      - Scan type                   0          0.0
+      - No suitable cell            0          0.0
+State Retention instances           0          0.0
+--------------------------------------------------
+
+PBS_Generic_Opt-Post - Elapsed_Time 25, CPU_Time 24.459975
+stamp 'PBS_Generic_Opt-Post' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |                                                                                Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-                                                                              ----------+----------------------
+ 00:00:36(00:06:36) |  00:00:00(00:00:00) |   0.0(  0.0) |   22:51:38 (May27) |                                                                                467.9 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-                                                                              ----------+----------------------
+ 00:01:00(00:07:01) |  00:00:24(00:00:25) | 100.0(100.0) |   22:52:03 (May27) |                                                                                799.1 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-                                                                              ----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info da                                                                              tabase
+Info: CPU time includes time of parent + longest thread
+PBS_Generic-Postgen HBO Optimizations - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_Generic-Postgen HBO Optimizations' being created for table 'pbs_debug                                                                              '
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |                                                                                Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-                                                                              ----------+----------------------
+ 00:00:36(00:06:36) |  00:00:00(00:00:00) |   0.0(  0.0) |   22:51:38 (May27) |                                                                                467.9 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-                                                                              ----------+----------------------
+ 00:01:00(00:07:01) |  00:00:24(00:00:25) | 100.0(100.0) |   22:52:03 (May27) |                                                                                799.1 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-                                                                              ----------+----------------------
+ 00:01:00(00:07:01) |  00:00:00(00:00:00) |   0.0(  0.0) |   22:52:03 (May27) |                                                                                799.1 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-                                                                              ----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info da                                                                              tabase
+Info: CPU time includes time of parent + longest thread
+##>=================== Cadence Confidential (Generic-Logical) ==================                                                                              =
+##>=================== Cadence Confidential (Generic-Logical) ==================                                                                              =
+##>Main Thread Summary:
+##>-----------------------------------------------------------------------------                                                                              -----------
+##>STEP                           Elapsed       WNS       TNS     Insts      Are                                                                              a    Memory
+##>-----------------------------------------------------------------------------                                                                              -----------
+##>G:Initial                            0         -         -      2402     1935                                                                              1       467
+##>G:Setup                              0         -         -         -                                                                                       -         -
+##>G:Launch ST                          0         -         -         -                                                                                       -         -
+##>G:Design Partition                   0         -         -         -                                                                                       -         -
+##>G:Create Partition Netlists          0         -         -         -                                                                                       -         -
+##>G:Init Power                         0         -         -         -                                                                                       -         -
+##>G:Budgeting                          0         -         -         -                                                                                       -         -
+##>G:Derenv-DB                          0         -         -         -                                                                                       -         -
+##>G:Debug Outputs                      0         -         -         -                                                                                       -         -
+##>G:ST loading                         0         -         -         -                                                                                       -         -
+##>G:Distributed                        0         -         -         -                                                                                       -         -
+##>G:Timer                              0         -         -         -                                                                                       -         -
+##>G:Assembly                           0         -         -         -                                                                                       -         -
+##>G:DFT                                0         -         -         -                                                                                       -         -
+##>G:Const Prop                         0         -         -      2132     1627                                                                              5       799
+##>G:Misc                              25
+##>-----------------------------------------------------------------------------                                                                              -----------
+##>Total Elapsed                       25
+##>=============================================================================                                                                              ===========
+Info    : Done synthesizing. [SYNTH-2]
+        : Done synthesizing 'fifo_async' to generic gates.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   syn_gen
+@genus:root: 9>
